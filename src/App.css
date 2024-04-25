@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'san sarif roboto';
+}
+
+.App {
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+ text-align: center;
+ background-image: linear-gradient(to right, #f5f2f5, #d3a7be);
+}
+
+.save-btn-sm{
+  display: none;
+}
+
+@media screen and (min-width:992px) {
+  .App{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  ul{
+  border-left: solid 2px #8d187a;
+  width: 55%;
+  height: 100vh;
+}
+.save-btn-sm{
+  display: block;
+}
+ .save-btn-lg{
+  display: none;
+ } 
+}
+
+form{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form input{
+  padding: 10px 25px;
+  border:solid #b656b6 1.5px;
+  border-radius: 10px;
+  color: #de2727;
+  font-weight: 600;
+  font-size: 15px;
+  outline-color: #b656b6;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  background: transparent;
+}
+
+form button{
+  padding: 10px 25px;
+  border:solid #b656b6 1.5px;
+  border-radius: 10px;
+  color: #b656b6;
+  outline-color: #b656b6;
+  margin-right: 20px;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #b656b6;
+  color: #ffffff;
+}
+
+hr{
+  background-image:linear-gradient(to right, #b656b6, #de2727, #9b2487);
+  height: 3px;
+}
+h2{
+  color: #de2727;
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+ul li{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 8px;
+  padding: 8px;
+  border: solid 1px #c65e79;
+  border-radius: 8px;
+
+}
+li label{
+  color: #f42e2e;
+  font-size: 25px;
+  font-weight: 500
+}
+li input{
+  width: 30px;
+  cursor: pointer;
+}
+
+div button{
+  padding: 8px 18px;
+  border:solid #b656b6 1.5px;
+  border-radius: 10px;
+  color: #8d187a;
+  outline-color: #b656b6;
+  margin-right: 20px;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+div button:hover{
+  background-color: #b656b6;
+  color: #ffffff;  
+}
+
+.checked{
+  text-decoration: line-through;
+  color: #000;
+}
